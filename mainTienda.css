@@ -1,0 +1,298 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  
+}
+
+/*---HEADER---------------------------------------------------------------------------------------*/
+
+header{
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(Imagenes/headergaleria.jpg);
+   background-size: cover;
+ 
+   background-repeat: no-repeat;
+   overflow: hidden;
+   display: flex;
+  
+}
+
+
+/*---CONTENEDOR MAIN---------------------------------------------------------------------------------------*/
+
+.contenedortienda{
+    display: flex;
+   
+    
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 150VH;
+    
+    
+}
+
+.logueado{
+   margin-top: 5%;
+   margin-left: 5%;
+   font-size: 40px;
+   margin-bottom: 5%; 
+    
+}
+
+.logueado a{
+    color: gold;
+    text-decoration: none;
+}
+
+
+
+.columnaproductos{
+   
+    
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 100%;
+    width: 100%;
+    gap: 2%;
+    padding:5%;
+    overflow-y: scroll;
+
+}
+.columnaproductos::-webkit-scrollbar{
+    width: 10px;
+    background: #1f1f1f;
+  }
+.columnaproductos::-webkit-scrollbar-thumb{
+    background-color: #ffffff;
+    width: auto;
+    border-radius: 20px;
+}
+  
+
+.producto{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: 60%;
+   
+    color: white;
+     
+}
+
+.contenedorimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.producto img{
+    width: 100%;
+    transition: 0.2s;
+}
+
+.producto:hover img{
+    scale: 1.1;
+}
+
+.producto h3{
+    color:goldenrod;
+}
+
+
+
+
+#botoncomprar{
+    width: 105%;
+    position: absolute;
+    bottom: 0;
+    background: #101010;
+    color: goldenrod;
+    height: 13%;
+    transition: 0.3s;
+    transform: translateY(40px);
+    opacity: 0;
+    border: #1a1a1a;
+    
+}
+
+.producto:hover #botoncomprar{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+
+/*---VENTANAS EMERGENTES---------------------------------------------------------------------------------------*/
+
+.ventanacarrito{
+    position: fixed;
+    display: flex;
+    z-index: 200;
+    padding: 3%;
+    width: 80%;
+    background-image: linear-gradient(to right top, #1c1b1b, #1d1c1c, #1d1d1d, #1e1e1e, #1f1f1f);
+    border-radius: 5px;
+    height: 80vh;
+    left: 10%;
+    top: 10%;
+    
+    
+}
+
+
+.ventanainiciar{
+    position: fixed;
+    display: flex;
+    z-index: 200;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    width: 50%;
+    background-image: linear-gradient(to right top, #1c1b1b, #1d1c1c, #1d1d1d, #1e1e1e, #1f1f1f);
+    border-radius: 5px;
+    height: 50vh;
+    left: 25%;
+    top: 22%;
+
+    
+    
+}
+
+.columnalista{
+
+    width: 70%;
+    height: 100%;
+   
+    overflow-y: scroll;   
+}
+
+.productocarro{
+    display: flex;
+    padding: 1%;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    height: 25%;
+   
+   
+}
+
+.productocarro form{
+    display: flex;
+   justify-content: center;
+   gap: 2%;
+    color: white;
+    font-weight: 200;
+    font-size: 35px;
+    z-index: 300;
+}
+
+
+
+.productocarro h3{
+    display: flex;
+
+    color: white;
+    font-weight: 200;
+    font-size: 35px;
+    z-index: 300;
+}
+
+.imgcarrito{
+    height: 100%;
+    width: 20%;
+ 
+
+}
+
+.imgcarrito img{
+    height: 100%;
+}
+
+.columnadatoscompra{
+
+    width: 30%;
+    height: 100%;
+ 
+
+
+}
+
+.contenedornegro{
+    height: 100vh;
+    width: 100%;
+    background: #00000088;
+    position: fixed;
+    z-index: 200;
+    
+}
+
+.bi{
+    
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    z-index: 500;
+    color: whitesmoke;
+    width: 50px;
+    cursor: pointer;
+    height: 50px;
+    transition: 0.1s;
+}
+
+.bi:hover{
+    color: goldenrod;
+}
+
+.listaBotones {
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 20%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    align-items: center;
+}
+
+select{
+    color: white;
+    background: #1a1a1a;
+    border: none;
+    padding: 3%;
+    border-radius: 4px;
+}
+
+/*tabla tienda*/
+.comprar{
+    width: 300px;
+}
+
+.borrarinput{
+
+    border: none;
+    padding: 3%;
+    border-radius: 4px;
+    background: rgb(231, 170, 16);
+
+
+}
+
+input{
+    padding:3%;
+}
